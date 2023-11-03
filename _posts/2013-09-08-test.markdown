@@ -1,0 +1,62 @@
+---
+layout: post
+title: "更改jekyll默认图片css"
+date: 2013-09-08 21:24
+comments: true
+categories: 
+---
+
+进入使用主题的css目录 
+
+	assets/themes/the-minimum/css
+
+创建自己的css文件
+
+	vim my.css
+
+增加h2，img, 样式
+
+
+	.mediaobject {
+	
+	        margin-top: 5px;
+	        margin-left: 4.16%;
+	        margin-right: 4.16%;
+	        padding: 5px;
+	        /*     border: 1px dashed gray; */
+	        border: 5px solid #BBBBBB;
+	}
+	
+	img {
+	        margin-left:4.16%;
+	        border-style: none;
+	        max-width: 100%;
+	        /* padding: 20px 20px 20px 80px; */
+	           
+	/*      border: 1px dashed gray; */
+	/*       border: 0.7em solid #E0DFCC; */
+	        overflow: hidden;
+	}
+	
+	
+	
+	
+	h2 {
+	        margin-left: -4.16%;
+	        padding: 0.694% 1.38%;
+	        background: #FBF3DC;
+	        border-radius: 5px;
+	        font-size: 20px;
+	        line-height: 36px;
+	        font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+	        color: #333333;
+	        margin: 10px 0;
+	        background: none repeat scroll 0 0 #FBF3DC;
+	        border-radius: 5px 5px 5px 5px;
+	        /*     margin: 1.38% 0 1.38% -2.78%; */
+	        padding: 0.48% 1.38%;
+	        color: #333333;
+	        font-weight: bold;
+	        margin-left: -4.16%;
+	        text-rendering: optimizelegibility;
+	}
