@@ -39,8 +39,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
       - name: Change ownership and permissions
         run: |
-          sudo chown -R runner:runner /home/runner/work/xiquwugou.github.com/xiquwugou.github.com/_site
-          sudo chmod -R +rw /home/runner/work/xiquwugou.github.com/xiquwugou.github.com/_site
+          sudo chown -R runner:runner /home/runner/work/aden/aden/_site
+          sudo chmod -R +rw /home/runner/work/aden/aden/_site
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
