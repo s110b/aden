@@ -1,0 +1,455 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Jekyll 中的配置和模板语法 &#8211; xiquwugou</title>
+<meta name="description" content="Jekyll 中的配置和模板语法">
+<meta name="keywords" content="sample post">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jekyll 中的配置和模板语法">
+<meta property="og:description" content="Jekyll 中的配置和模板语法">
+<meta property="og:url" content="https://main-1vp.pages.dev/2022-08-30-jeyll-guide/">
+<meta property="og:site_name" content="xiquwugou">
+
+
+
+
+
+<link rel="canonical" href="https://main-1vp.pages.dev/2022-08-30-jeyll-guide/">
+<link href="https://main-1vp.pages.dev/feed.xml" type="application/atom+xml" rel="alternate" title="xiquwugou Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://main-1vp.pages.dev/assets/css/main.css">
+<!-- Webfonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="https://main-1vp.pages.dev/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="https://main-1vp.pages.dev/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="https://main-1vp.pages.dev/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="https://main-1vp.pages.dev/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://main-1vp.pages.dev/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://main-1vp.pages.dev/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://main-1vp.pages.dev/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+<style type="text/css">body {background-image:url(https://main-1vp.pages.dev/images/triangular.png);}</style>
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="https://main-1vp.pages.dev/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="https://main-1vp.pages.dev/images/avatar.jpg" alt="xiquwugou photo" class="author-photo">
+					<h4>xiquwugou</h4>
+					<p>Your bio goes here. It shouldn't be super long but a good sentence or two should suffice.</p>
+				</li>
+				<li><a href="https://main-1vp.pages.dev/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:xiqu.wugou@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="https://main-1vp.pages.dev/posts/">All Posts</a></li>
+				<li><a href="https://main-1vp.pages.dev/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="https://main-1vp.pages.dev/theme-setup/" >读书笔记</a></li>
+	  
+	    
+	    <li><a href="http://songxiaofeng1981.github.io" target="_blank">External Link</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="https://main-1vp.pages.dev/2022-08-30-jeyll-guide/" rel="bookmark" title="Jekyll 中的配置和模板语法">Jekyll 中的配置和模板语法</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2022-08-29T00:00:00+08:00">August 29, 2022</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~1 minute
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <h2 id="jekyll-中的配置和模板语法">Jekyll 中的配置和模板语法</h2>
+
+<h2 id="配置">配置</h2>
+
+<h3 id="文件介绍">文件介绍</h3>
+
+<p><strong>_config.yml</strong></p>
+
+<p>Jekyll 的全局配置文件。<br />
+比如网站的名字，网站的域名，网站的链接格式等等。</p>
+
+<p><strong>_drafts</strong></p>
+
+<p>未发布的 posts 存放的地方，这里的 post 文件名不需要加日期标记。</p>
+
+<p><strong>_includes</strong></p>
+
+<p>该目录下的文件内容是最终要放进模版文件中的一些代码片段。<br />
+对于网站的头部，底部，侧栏等公共部分，为了维护方便，我们可能想提取出来单独编写，然后使用的时候包含进去即可。<br />
+这时我们可以把那些公共部分放在这个目录下，使用时只需要引入即可。</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="sx">% include </span><span class="n">filename</span> <span class="o">%</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>_layouts</strong></p>
+
+<p>存放一些模版文件，模版是用来包含并装饰 page 或 post 内容的。Jekyll 的模版使用 HTML 语法来写，并包含 <a href="http://en.wikipedia.org/wiki/Yaml" title="一个几乎所有编程语言都支持的易读的数据序列化（ Serialization ) 标准">YAML</a> Front Matter。<br />
+所有的模版都可用 Liquid 来与网站进行交互，都可以使用全局变量 site 和 page 。</p>
+
+<p>site 变量: 包含该网站所有可以接触得到的内容和元数据(meta-data)<br />
+page 变量: 包含的是当前渲染的page或post的所有可以接触得到的数据</p>
+
+<p>对于网站的布局，一般会写成模板的形式，这样对于写实质性的内容时，比如文章，只需要专心写文章的内容，然后加个标签指定用哪个模板即可。<br />
+对于内容，指定模板了模板后,我们可以称内容是模板的儿子。<br />
+为什么这样说呢？ 因为这个模板时可以多层嵌套的，内容实际上模板，只不过是叶子节点而已。</p>
+
+<p>在模板中，引入儿子的内容：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ { content } }
+</code></pre></div></div>
+
+<p>在儿子中，指定父节点模板：</p>
+
+<blockquote>
+  <p>注意，必须在子节点的顶部。</p>
+</blockquote>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p><strong>_posts</strong></p>
+
+<p>发布的内容，比如博客文章，常放在这里面，而且一般作为叶子节点。<br />
+文件的命名必须遵循：<code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.markdown</code>。</p>
+
+<p>另外，所有放在根目录下并且不以下划线开头的文件夹中有格式的文件都会被 Jekyll 处理成 page。<br />
+这里说的有格式是指含有 YAML Front Matter 头部的文件。</p>
+
+<p>所有的 post 和 page 都要用 markdown 或者 texile 或者 HTML 语法来写，可以包含 Liquid 模版的语法。而且必须要有 YAML Front Matter 头部( Jekyll 只处理具有 YAML Front Matter 的文件)。</p>
+
+<p>YAML Front Matter 必须放在文件的开头，一对<code class="language-plaintext highlighter-rouge">---</code>之间，用户可在这一对<code class="language-plaintext highlighter-rouge">---</code>间设置预先定义的变量或用户自己的数据。具体看下面的 <a href="#frontmatter">说明</a>。</p>
+
+<p><strong>_data</strong></p>
+
+<p>Jekyll 支持从该目录中加载 YAML、 JSON、 和 CSV 格式（<code class="language-plaintext highlighter-rouge">.yml</code>、<code class="language-plaintext highlighter-rouge">yaml</code>、<code class="language-plaintext highlighter-rouge">json</code>或<code class="language-plaintext highlighter-rouge">csv</code>扩展名）的文件数据。用于配置一些全局变量，不过数据比较多，所以放在这里。<br />
+比如，多人参与网站开发，我们通常会在这里面定义一个<em>members.yml</em>文件。</p>
+
+<p>例如文件内容为：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- name: Tom Preston-Werner
+  github: mojombo
+
+- name: Parker Moore
+  github: parkr
+</code></pre></div></div>
+
+<p>然后在模板中我们就可以通过<code class="language-plaintext highlighter-rouge">site.data.members</code>(注意：文件名决定变量名)使用这些数据。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ul&gt;
+{ % for member in site.data.members % }
+  &lt;li&gt;
+    &lt;a href="https://github.com/{ { member.github } }"&gt;
+      { { member.name } }
+    &lt;/a&gt;
+  &lt;/li&gt;
+{ % endfor % }
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p><strong>_site</strong></p>
+
+<p>Jekyll 生成的网页默认输出的地方，一般需要在<code class="language-plaintext highlighter-rouge">.gitignore</code>中屏蔽掉这个目录。</p>
+
+<p><strong>index.html</strong></p>
+
+<p>主页文件，后缀有时也用 <code class="language-plaintext highlighter-rouge">index.md</code> 等。<br />
+这个需要根据自己的需要来写，因为不同的格式之间在某些情况下还是有一些细微的差别的。</p>
+
+<p><strong>其他静态资源</strong></p>
+
+<p>对于其他静态资源，可以直接放在根目录或任何其他目录，然后路径和平常的网站一样，按路径来找链接中的文件。</p>
+
+<h2 id="配置全局变量">配置全局变量</h2>
+
+<p>虽然全局变量都有自己的 <a href="http://jekyllrb.com/docs/configuration/">默认配置</a>，但是我们往往会手动配置为自己心中最好的效果。<br />
+另外，一些全局变量既可以在配置文件中设置，也可以在命令行选项参数里指定。</p>
+
+<blockquote>
+  <p>注意，配置不用使用 tab，否则可能会忽略那条命令。</p>
+</blockquote>
+
+<h3 id="源代码的位置">源代码的位置</h3>
+
+<p>这个一般不配置，默认即可。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source: DIR
+</code></pre></div></div>
+
+<p>当然编译的时候也可以指定，但是使用 github 我们是不能指定参数的。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-s, --source DIR
+</code></pre></div></div>
+
+<h3 id="输出网站位置">输出网站位置</h3>
+
+<p>这个一般也是默认。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 编译参数 -d, --destination DIR
+destination: DIR #配置语法
+</code></pre></div></div>
+
+<h3 id="safe-开关">Safe 开关</h3>
+
+<p>官方文档上就一句话：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Disable custom plugins, and ignore symbolic links.
+</code></pre></div></div>
+
+<p>大概意思是禁用常用的插件，忽略符号链接。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 编译参数  --safe
+safe: BOOL
+</code></pre></div></div>
+
+<h3 id="base-url">Base URL</h3>
+
+<p>将 Jekyll 生成的网站内容放置在域名的子路径下面。</p>
+
+<p>我们经常需要在多个地方运行 Jekyll，如发布到 GitHub Pages 前在本地预览下网站。<code class="language-plaintext highlighter-rouge">--baseurl</code>标记就是为此而生的。</p>
+
+<p>首先在<code class="language-plaintext highlighter-rouge">_config.yml</code>文件添加<code class="language-plaintext highlighter-rouge">baseurl</code>，然后在网站各个链接的地方加前缀<code class="language-plaintext highlighter-rouge">/aden</code>。<br />
+当<code class="language-plaintext highlighter-rouge">jekyll serve</code>预览本地网站时，在本地域名后追加<code class="language-plaintext highlighter-rouge">--baseurl</code>的值（类似<code class="language-plaintext highlighter-rouge">/</code>这样的路径）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># baseurl: "/blog"  编译参数: --baseurl URL
+baseurl: URL
+</code></pre></div></div>
+
+<p>注意：所有的 page 和 post 的 URL 都是以斜线<code class="language-plaintext highlighter-rouge">/</code>领头，那么当<code class="language-plaintext highlighter-rouge">site.baseurl=/</code>时，连接的 URL 会出现两个重复的<code class="language-plaintext highlighter-rouge">/</code>而破坏超链接。因此，建议只在<code class="language-plaintext highlighter-rouge">baseurl</code>有具体值时才使用<code class="language-plaintext highlighter-rouge">site.baseurl</code>给 URL 加前缀。</p>
+
+<h3 id="忽略文件">忽略文件</h3>
+
+<p>这个很有用，有时候你写了一个文件，里面的一个东西可能会被 Jekyll 处理，但是你不想让 Jekyll 处理的话，就使用这个语法忽略那些文件。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exclude: [DIR, FILE, ...]
+</code></pre></div></div>
+
+<h3 id="强制处理文件">强制处理文件</h3>
+
+<p>有时候我们的一些文件的名字由于不在 Jekyll 处理的文件名字范围内，这时候就需要强制处理这些文件了。比如<code class="language-plaintext highlighter-rouge">.htaccess</code>文件。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># include: [".htaccess"]
+include: [DIR, FILE, ...]
+</code></pre></div></div>
+
+<h3 id="时区">时区</h3>
+
+<p>模板中经常会对时间进行转换，这个时候如果至指定时区的话，可能得到的时间会和我们想要的时间错几个小时。在 <a href="http://en.wikipedia.org/wiki/List_of_tz_database_time_zones">这里</a> 能查看到可用的值。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># timezone: Asia/Shanghai
+timezone: TIMEZONE
+</code></pre></div></div>
+
+<h3 id="编码">编码</h3>
+
+<p>大家都是程序员，就不用多说了。<br />
+执行<code class="language-plaintext highlighter-rouge">ruby-e'puts Encoding::list.join("\n")'</code>可列出本地 Ruby 可用的编码。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># encoding : utf-8
+encoding: ENCODING
+</code></pre></div></div>
+
+<h3 id="文章链接格式">文章链接格式</h3>
+
+<p>我们可以自定义 Post 的 URL 格式，通过 <code class="language-plaintext highlighter-rouge">permalink</code> 来配置。比如：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 设定 permalink 取值
+permalink: /:year/:month/:day/:title.html
+# 那么 post: 2014-10-19-slap-chop.md 最终输出的路径 URL 变成
+# /2014/10/19/slap-chop.html
+
+permalink: /:month-:day-:year/:title  # =&gt; /04-29-2009/slap-chop/index.html
+
+permalink: pretty    # =&gt; /2009/04/29/slap-chop/index.html
+</code></pre></div></div>
+
+<p>另外，还有3种内置的链接格式可以使用：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PERMALINK STYLE</th>
+      <th>URL TEMPLATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>date</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">/:categories/:year/:month/:day/:title.html</code></td>
+    </tr>
+    <tr>
+      <td><strong>pretty</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">/:categories/:year/:month/:day/:title/</code></td>
+    </tr>
+    <tr>
+      <td><strong>none</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">/:categories/:title.html</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="分页">分页</h3>
+
+<p>通常我们都不想把所有的 Post 都放在一页显示，而是要分成多页显示。好在 Jekyll 支持分页显示，通过<code class="language-plaintext highlighter-rouge">paginate</code>和<code class="language-plaintext highlighter-rouge">paginate_path</code>两个变量来设置每页显示的数量和分页 HTML 的 URL 路径。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>paginate: 5
+paginate_path: "blog/page:num/"
+</code></pre></div></div>
+
+<p>根据上面的配置，Jekyll 会读取<code class="language-plaintext highlighter-rouge">blog/index.html</code>文件，把每页赋值给全局变量<code class="language-plaintext highlighter-rouge">paginator</code>，并输出 HTML 分页文件，如：第2页为<code class="language-plaintext highlighter-rouge">blog/page2/index.html</code>。其中，“page” 是字符常量，变量<code class="language-plaintext highlighter-rouge">:num</code>是分页的页码，自动<strong>从 2 开始编码</strong>，因此在罗列所有页面页码及它们的超链接时要注意一下，首页链接没有中间的 “page1” 路径。<br />
+通过<code class="language-plaintext highlighter-rouge">paginator</code>的<a href="http://alfred-sun.github.io/atom.xml#pagination"><strong>相关属性</strong></a>我们可以实现在不同页间切换。</p>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="https://main-1vp.pages.dev/tags/#sample post" title="Pages tagged sample post" class="tag"><span class="term">sample post</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://main-1vp.pages.dev/2022-08-30-jeyll-guide/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https://main-1vp.pages.dev/2022-08-30-jeyll-guide/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https://main-1vp.pages.dev/2022-08-30-jeyll-guide/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="https://main-1vp.pages.dev/2022-08-29-%E9%9D%A2%E8%AF%95%E5%8F%8A%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="https://main-1vp.pages.dev/dadi-post/" title="乌俄战争的结局">乌俄战争的结局</a></h3>
+      <p> <a href="https://main-1vp.pages.dev/dadi-post/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="https://main-1vp.pages.dev/taste-post/" title="taste是个玄学">taste是个玄学</a></h4>
+        <span>Published on November 16, 2022</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="https://main-1vp.pages.dev/india-worker/" title="印度工人">印度工人</a></h4>
+        <span>Published on August 30, 2022</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2023 xiquwugou. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://main-1vp.pages.dev/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="https://main-1vp.pages.dev/assets/js/scripts.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'xiquwugou'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	        
+
+</body>
+</html>
